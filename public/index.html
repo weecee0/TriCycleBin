@@ -31,6 +31,7 @@
         <div class="flex gap-x-4 sm:gap-x-8 lg:gap-x-12">
           <a href="#home" class="text-sm font-semibold leading-6 text-gray-900">Home</a>
           <a href="#about" class="text-sm font-semibold leading-6 text-gray-900">About</a>
+          <a href="#app" class="text-sm font-semibold leading-6 text-gray-900">App</a>
           <a href="#goals" class="text-sm font-semibold leading-6 text-gray-900">Goals</a>
           <a href="#video" class="text-sm font-semibold leading-6 text-gray-900">Simulation</a>
         </div>
@@ -92,26 +93,55 @@
           classifies waste with the utilization of sensor fusion which are structured in a way to achieve low-cost
           highly efficient waste segregation.</p>
       </div>
-      <div class="mt-20 lg:mt-0 flex justify-center border-[1px] border-black">
-        <img class="h-[350px] w-[450px]" src="./assets/bin.jpg" alt="">
+      <div class="mt-20 lg:mt-0 flex justify-center">
+        <img class="h-[350px] w-[450px] border-[1px] border-black" src="./assets/bin.jpg" alt="">
       </div>
     </div>
-    <div class="h-40"></div>
-    <div class=" flex justify-around mx-auto max-w-7xl px-6 lg:px-8 content-center lg:flex-row flex-col">
-      <div class="flex justify-center border-[1px] border-black">
-        <img class="h-[350px] w-[450px]" src="./assets/Valide.jpg" alt="">
-      </div>
-      <div class="mx-auto max-w-2xl lg:mx-0">
-        <p class=" mt-24 text-lg leading-8 text-gray-600">
-          Our object classification model, optimized for the low resourced-ESP32 board, gives a fit score of more than
-          90% when trained on one NB class. It has an inference time of less than a second and peak RAM usage of 236KB.
+    <div class="h-28"></div>
+    <div class=" flex mx-auto max-w-5xl px-6 lg:px-8 content-center flex-col">
+      <div class=" flex justify-center items-center mx-auto max-w-2xl lg:max-w-auto">
+        <p class=" mt-auto text-lg leading-8 text-gray-600">
+          Our "Bio-NonBio" model is currently trained on seven different most common classes. It shows good accuracy for
+          majority of the waste types.
+
+          We also gave a medical waste model for the purpose of bin transformation in hospitals.
         </p>
+      </div>
+      <div class="flex flex-col lg:flex-row justify-around items-center">
+        <figure class="flex flex-col items-center">
+          <img class="h-[350px] w-[450px] border-[1px] border-black my-5" src="./assets/Valide.jpg" alt="">
+          <figcaption>Bio - Non-Bio Model</figcaption>
+        </figure>
+        <figure>
+          <img class="h-[350px] w-[450px] border-[1px] border-black my-5" src="./assets/Valide2.jpg" alt="">
+          <figcaption class="flex flex-col items-center">Medical Waste Model</figcaption>
+        </figure>
       </div>
 
     </div>
   </div>
   <!--About Section End-->
+  <!--APP UI-->
+  <div id="app">
+    <div class="mx-auto my-28 max-w-2xl lg:text-center animate-jump-in animate-once animate-delay-[1000ms]">
 
+      <p class="mt-0 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">APP <span class="gradient">UI</span>
+      </p>
+
+    </div>
+    <div class=" flex justify-around mx-auto max-w-7xl px-6 lg:px-8 content-center lg:flex-row flex-col">
+      <div class="flex justify-center">
+        <img class="h-auto w-auto my-5" src="./assets/app1.jpg" alt="">
+      </div>
+      <div class="flex justify-center">
+        <img class="h-auto w-auto my-5" src="./assets/app2.jpg" alt="">
+      </div>
+      <div class="flex justify-center">
+        <img class="h-auto w-auto my-5" src="./assets/app3.jpg" alt="">
+      </div>
+    </div>
+  </div>
+  <!--APP UI End-->
   <!--Goals Section End-->
   <div id="goals" class="bg-white py-20 sm:py-24">
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
@@ -176,9 +206,8 @@
       </div>
       <div class="h-28"></div>
       <div class="flex justify-center h-auto w-auto">
-        <iframe width="775" height="436" src="https://www.youtube.com/embed/8vKT_MHKIhA" title="TriCycle Bin SIH 23"
-          frameborder="0"
-          class="cursor-default"
+        <iframe width="740" height="416" src="https://www.youtube.com/embed/6bZqPlRcNB4"
+          title="TriCycle Bin Imagine Cup&#39;24" frameborder="0" class="cursor-default"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen></iframe>
       </div>
@@ -187,13 +216,14 @@
   </div>
   <!-- video section end-->
   <!-- Footer -->
-  
-<footer class="bg-white rounded-lg shadow m-4">
-  <div class="w-full mx-auto max-w-screen-xl p-4 flex items-center justify-center">
-    <span class="text-sm text-gray-900 text-center">© 2024 <a href="#home" class="hover:underline">TriCycle Bin™</a>. All Rights Reserved.
-    </span>
-  </div>
-</footer>
+
+  <footer class="bg-white rounded-lg shadow m-4">
+    <div class="w-full mx-auto max-w-screen-xl p-4 flex items-center justify-center">
+      <span class="text-sm text-gray-900 text-center">© 2024 <a href="#home" class="hover:underline">TriCycle Bin™</a>.
+        All Rights Reserved.
+      </span>
+    </div>
+  </footer>
 
 </body>
 
